@@ -1,0 +1,59 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 80                                       
+FILE_RECORDS                       = 294                                      
+                                                                              
+^TABLE                             = "discnote.tab"                           
+                                                                              
+DATA_SET_ID                        = "EAR-A-5-DDR-ASTNAMES-DISCOVERY-V12.0"   
+PRODUCT_NAME                       = "ASTEROID NAMES AND DISCOVERY            
+        CIRCUMSTANCES, NOTES"                                                 
+PRODUCT_ID                         = "DISCNOTE_TAB"                           
+INSTRUMENT_HOST_ID                 = "PUBLIT"                                 
+INSTRUMENT_HOST_NAME               = "PUBLISHED LITERATURE"                   
+INSTRUMENT_ID                      = "COMPIL"                                 
+INSTRUMENT_NAME                    = "COMPILATION"                            
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = 1801-01-01                               
+STOP_TIME                          = 1989-12-31                               
+PRODUCT_CREATION_TIME              = 2005-05-03  /* File uploaded to OLAF */  
+REFERENCE_KEY_ID                   = {"PILCHER1979", "PILCHER1989"}           
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 294                                      
+ ROW_BYTES                         = 80                                       
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 2                                        
+ DESCRIPTION                       = "Notes on the discovery circumstances of 
+        the minor planets, from Pilcher's compilation in the Tucson Revised   
+        Index of Asteroid Data, with the note code referred to in the         
+        discovery circumstances file 'discover.tab'."                         
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "NOTE_CODE"                              
+  DESCRIPTION                      = "The code referred to in the discovery   
+        circumstances file 'discover.tab'.  If this field is a dash, the line 
+        is a continuation of the previous line."                              
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 1                                        
+  BYTES                            = 3                                        
+  FORMAT                           = "A3"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "NOTE"                                   
+  DESCRIPTION                      = "The note corresponding to the code given
+        in the previous field.  If the note code field is a dash, the line is 
+        a continuation of the previous line."                                 
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 6                                        
+  BYTES                            = 72                                       
+  FORMAT                           = "A72"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           

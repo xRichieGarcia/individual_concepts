@@ -1,0 +1,17 @@
+PDS_VERSION_ID                     = PDS3                                     
+RECORD_TYPE                        = "STREAM"                                 
+FILE_RECORDS                       = 8                                        
+DATA_SET_ID                        = "EAR-A-5-DDR-ASTEROID-DENSITIES-V1.1"    
+                                                                              
+^DOCUMENT                          = "ads.txt"                                
+                                                                              
+OBJECT                             = DOCUMENT                                 
+   DOCUMENT_NAME                   = "ADS SUBMISSION FILE"                    
+   PUBLICATION_DATE                = 2005-01-19                               
+   DOCUMENT_TOPIC_TYPE             = "BIBLIOGRAPHIC INFORMATION"              
+   INTERCHANGE_FORMAT              = "ASCII"                                  
+   DOCUMENT_FORMAT                 = "TEXT"                                   
+   DESCRIPTION                     = "This document is sent to Astrophysics   
+        Data System to list this data set and its products in their service." 
+END_OBJECT                         = DOCUMENT                                 
+END                                                                           

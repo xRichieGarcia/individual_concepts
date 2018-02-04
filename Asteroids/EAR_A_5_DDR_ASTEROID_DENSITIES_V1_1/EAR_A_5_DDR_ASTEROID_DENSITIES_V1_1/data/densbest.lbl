@@ -1,0 +1,294 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 130                                      
+FILE_RECORDS                       = 23                                       
+                                                                              
+^TABLE                             = "densbest.tab"                           
+                                                                              
+DATA_SET_ID                        = "EAR-A-5-DDR-ASTEROID-DENSITIES-V1.1"    
+PRODUCT_NAME                       = "ASTEROID DENSITIES BEST ESTIMATES"      
+PRODUCT_ID                         = "DENSBEST_TAB"                           
+INSTRUMENT_HOST_ID                 = "PUBLIT"                                 
+INSTRUMENT_HOST_NAME               = "PUBLISHED LITERATURE"                   
+INSTRUMENT_ID                      = "COMPIL"                                 
+INSTRUMENT_NAME                    = "COMPILATION"                            
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = 1966-01-01                               
+STOP_TIME                          = 2001-12-31                               
+PRODUCT_CREATION_TIME              = 2005-01-11  /* File uploaded to OLAF */  
+REFERENCE_KEY_ID                   = "BRITTETAL2002"                          
+RECORD_FORMAT                      = "(I6, 1X, A17, 1X, A10, 1X, A1, 2X, I1,  
+        1X, E9.3, 1X, I1, 1X, E8.2, 1X, I1, 1X, E8.2, 1X, I1, 1X, E8.2, 1X,   
+        E8.2, 1X, F6.2, 1X, F5.2, 1X, F4.2, 1X, F4.2, 1X, F4.2, 1X, A5)"      
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 23                                       
+ ROW_BYTES                         = 130                                      
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 19                                       
+ DESCRIPTION                       = "A compilation of asteroid mass,         
+        diameter, and density results compiled by D. T. Britt.  This table    
+        reproduces only the best estimates given in Table 1 of Britt, et al.  
+        (2002) [BRITTETAL2002] (appearing in the 'Asteroids III' volume).     
+        "                                                                     
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "AST_NUMBER"                             
+  DESCRIPTION                      = "Asteroid number, if any"                
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 1                                        
+  BYTES                            = 6                                        
+  FORMAT                           = "I6"                                     
+  MISSING_CONSTANT                 = -99999                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "AST_NAME"                               
+  DESCRIPTION                      = "Asteroid name, if any"                  
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 8                                        
+  BYTES                            = 17                                       
+  FORMAT                           = "A17"                                    
+  MISSING_CONSTANT                 = "---"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 3                                        
+  NAME                             = "PROV_ID"                                
+  DESCRIPTION                      = "Asteroid provisional designation,       
+        provided for objects without numbers at the time of editing"          
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 26                                       
+  BYTES                            = 10                                       
+  FORMAT                           = "A10"                                    
+  MISSING_CONSTANT                 = "---"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 4                                        
+  NAME                             = "TAX_TYPE"                               
+  DESCRIPTION                      = "Tholen taxonomic type for the asteroid, 
+        included here for convenience only"                                   
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 37                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "A1"                                     
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 5                                        
+  NAME                             = "M_SOL_SOURCE"                           
+  DESCRIPTION                      = "Flag for the source of M_SOL, the mass  
+        of the asteroid in solar masses.  This flag takes the following       
+        values:                                                               
+           0 - Mass in solar masses provided in Britt (2002) (Asteroids III)  
+           1 - Mass in solar masses calculated from the mass in kilogram      
+        (following) using the conversion factor 1.989E+30 kg per solar mass   
+           2 - Mass in solar masses not available"                            
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 40                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "I1"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 6                                        
+  NAME                             = "M_SOL"                                  
+  DESCRIPTION                      = "Mass of asteroid in units of solar mass"
+  UNIT                             = "SOLAR MASS"                             
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 42                                       
+  BYTES                            = 9                                        
+  FORMAT                           = "E9.3"                                   
+  MISSING_CONSTANT                 = -.999E+99                                
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 7                                        
+  NAME                             = "M_SOL_UNC_SOURCE"                       
+  DESCRIPTION                      = "Flag for the source of                  
+        M_SOL_UNCERTAINTY, the uncertainty in the mass of the asteroid in     
+        solar masses.  This flag takes the following values:                  
+           0 - Mass uncertainty in solar masses provided in Britt (2002)      
+        (Asteroids III)                                                       
+           1 - Mass uncertainty in solar masses calculated from the mass      
+        uncertainty in kilograms, using the conversion factor 1.989E+30 kg per
+        solar mass                                                            
+           2 - Mass uncertainty in solar masses not available"                
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 52                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "I1"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 8                                        
+  NAME                             = "M_SOL_UNCERTAINTY"                      
+  DESCRIPTION                      = "One sigma uncertainty in asteroid mass  
+        in units of solar masses"                                             
+  UNIT                             = "SOLAR MASS"                             
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 54                                       
+  BYTES                            = 8                                        
+  FORMAT                           = "E8.2"                                   
+  MISSING_CONSTANT                 = -.99E+99                                 
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 9                                        
+  NAME                             = "M_KG_SOURCE"                            
+  DESCRIPTION                      = "Flag for the source of M_KG, the mass of
+        the asteroid in kilograms.  This flag takes the following values:     
+           0 - Mass in kilograms provided in Britt (2002) (Asteroids III)     
+           1 - Mass in kilograms calculated from the mass in solar masses,    
+        using the conversion factor 1.989E+30 kg per solar mass               
+           2 - Mass in kilograms not available"                               
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 63                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "I1"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 10                                       
+  NAME                             = "M_KG"                                   
+  DESCRIPTION                      = "Mass of asteroid in units of kilograms" 
+  UNIT                             = "KILOGRAM"                               
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 65                                       
+  BYTES                            = 8                                        
+  FORMAT                           = "E8.2"                                   
+  MISSING_CONSTANT                 = -.99E+99                                 
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 11                                       
+  NAME                             = "M_KG_UNC_SOURCE"                        
+  DESCRIPTION                      = "Flag for the source of the uncertainty  
+        of M_KG, the uncertainty in the mass of the asteroid in kilograms.    
+        This flag takes the following values:                                 
+           0 - Mass uncertainty in kilograms provided in Britt (2002)         
+        (Asteroids III)                                                       
+           1 - Mass uncertainty in kilograms calculated from the mass         
+        uncertainty in solar masses, using the conversion factor 1.989E+30 kg 
+        per solar mass.                                                       
+           2 - Mass uncertainty in kilograms not available This flag applies  
+        to both the upper and lower uncertainty of M_KG."                     
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 74                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "I1"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 12                                       
+  NAME                             = "M_KG_UPPER_UNC"                         
+  DESCRIPTION                      = "Upper one sigma uncertainty in the      
+        asteroid mass in units of kilograms"                                  
+  UNIT                             = "KILOGRAM"                               
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 76                                       
+  BYTES                            = 8                                        
+  FORMAT                           = "E8.2"                                   
+  MISSING_CONSTANT                 = -.99E+99                                 
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 13                                       
+  NAME                             = "M_KG_LOWER_UNC"                         
+  DESCRIPTION                      = "Lower one sigma uncertainty in the      
+        asteroid mass in units of kilograms.  If the uncertainty is           
+        symmetrical this value will duplicate the upper uncertainty."         
+  UNIT                             = "KILOGRAM"                               
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 85                                       
+  BYTES                            = 8                                        
+  FORMAT                           = "E8.2"                                   
+  MISSING_CONSTANT                 = -.99E+99                                 
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 14                                       
+  NAME                             = "DIAMETER"                               
+  DESCRIPTION                      = "Diameter of asteroid in units of km"    
+  UNIT                             = "KILOMETER"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 94                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.2"                                   
+  MISSING_CONSTANT                 = -99.99                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 15                                       
+  NAME                             = "DIAMETER_UNC"                           
+  DESCRIPTION                      = "One sigma uncertainty in asteroid       
+        diameter"                                                             
+  UNIT                             = "KILOMETER"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 101                                      
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.2"                                   
+  MISSING_CONSTANT                 = -9.99                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 16                                       
+  NAME                             = "BULK_DENSITY"                           
+  DESCRIPTION                      = "Best current estimate of asteroid bulk  
+        density."                                                             
+  UNIT                             = "GRAMS PER CUBIC CENTIMETER"             
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 107                                      
+  BYTES                            = 4                                        
+  FORMAT                           = "F4.2"                                   
+  MISSING_CONSTANT                 = -.99                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 17                                       
+  NAME                             = "BD_UPPER_UNC"                           
+  DESCRIPTION                      = "One sigma upper uncertainty in asteroid 
+        bulk density"                                                         
+  UNIT                             = "GRAMS PER CUBIC CENTIMETER"             
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 112                                      
+  BYTES                            = 4                                        
+  FORMAT                           = "F4.2"                                   
+  MISSING_CONSTANT                 = -.99                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 18                                       
+  NAME                             = "BD_LOWER_UNC"                           
+  DESCRIPTION                      = "One sigma lower uncertainty in asteroid 
+        bulk density"                                                         
+  UNIT                             = "GRAMS PER CUBIC CENTIMETER"             
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 117                                      
+  BYTES                            = 4                                        
+  FORMAT                           = "F4.2"                                   
+  MISSING_CONSTANT                 = -.99                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 19                                       
+  NAME                             = "REFERENCES"                             
+  DESCRIPTION                      = "Reference codes indicate numbered       
+        references, listed in the accompanying file 'densrefs.tab,' to the    
+        published papers reporting the values of asteroid mass, diameter, and 
+        density tabulated here. There may be two comma-separated values in    
+        this field."                                                          
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 122                                      
+  BYTES                            = 5                                        
+  FORMAT                           = "A5"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           

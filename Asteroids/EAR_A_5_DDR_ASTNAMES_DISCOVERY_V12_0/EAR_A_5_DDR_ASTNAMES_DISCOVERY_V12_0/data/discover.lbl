@@ -1,0 +1,112 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 136                                      
+FILE_RECORDS                       = 181699                                   
+                                                                              
+^TABLE                             = "discover.tab"                           
+                                                                              
+DATA_SET_ID                        = "EAR-A-5-DDR-ASTNAMES-DISCOVERY-V12.0"   
+PRODUCT_NAME                       = "ASTEROID NAMES AND DISCOVERY            
+        CIRCUMSTANCES"                                                        
+PRODUCT_ID                         = "DISCOVER_TAB"                           
+INSTRUMENT_HOST_ID                 = "PUBLIT"                                 
+INSTRUMENT_HOST_NAME               = "PUBLISHED LITERATURE"                   
+INSTRUMENT_ID                      = "COMPIL"                                 
+INSTRUMENT_NAME                    = "COMPILATION"                            
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = 1801-01-01                               
+STOP_TIME                          = 2008-04-20                               
+PRODUCT_CREATION_TIME              = 2008-05-08  /* File uploaded to OLAF */  
+REFERENCE_KEY_ID                   = {"PILCHER1979", "PILCHER1989"}           
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 181699                                   
+ ROW_BYTES                         = 136                                      
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 7                                        
+ DESCRIPTION                       = "Names, designations, and discovery      
+        circumstances for the numbered asteroids, sorted in order of catalog  
+        number."                                                              
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "AST_NUMBER"                             
+  DESCRIPTION                      = "Asteroid catalog number."               
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 1                                        
+  BYTES                            = 6                                        
+  FORMAT                           = "I6"                                     
+  MISSING_CONSTANT                 = 0                                        
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "AST_NAME"                               
+  DESCRIPTION                      = "Asteroid name."                         
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 8                                        
+  BYTES                            = 17                                       
+  FORMAT                           = "A17"                                    
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 3                                        
+  NAME                             = "PROV_ID"                                
+  DESCRIPTION                      = "Asteroid principal provisional          
+        designation."                                                         
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 26                                       
+  BYTES                            = 11                                       
+  FORMAT                           = "A11"                                    
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 4                                        
+  NAME                             = "DISCOVERY_DATE"                         
+  DESCRIPTION                      = "Date of asteroid discovery."            
+  DATA_TYPE                        = "DATE"                                   
+  START_BYTE                       = 38                                       
+  BYTES                            = 10                                       
+  FORMAT                           = "A10"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 5                                        
+  NAME                             = "DISCOVERY_LOCATION"                     
+  DESCRIPTION                      = "Location where asteroid was discovered."
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 51                                       
+  BYTES                            = 20                                       
+  FORMAT                           = "A20"                                    
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 6                                        
+  NAME                             = "DISCOVERER_NAMES"                       
+  DESCRIPTION                      = "Names of the asteroid discoverers."     
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 72                                       
+  BYTES                            = 59                                       
+  FORMAT                           = "A59"                                    
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 7                                        
+  NAME                             = "NOTE_CODE"                              
+  DESCRIPTION                      = "The text of the notes are included in   
+        the file 'discnote.tab'."                                             
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 132                                      
+  BYTES                            = 3                                        
+  FORMAT                           = "A3"                                     
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           

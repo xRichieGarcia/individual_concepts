@@ -1,0 +1,60 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 80                                       
+FILE_RECORDS                       = 105                                      
+                                                                              
+^TABLE                             = "densrefs.tab"                           
+                                                                              
+DATA_SET_ID                        = "EAR-A-5-DDR-ASTEROID-DENSITIES-V1.1"    
+PRODUCT_NAME                       = "ASTEROID DENSITIES REFERENCES"          
+PRODUCT_ID                         = "DENSREFS_TAB"                           
+INSTRUMENT_HOST_ID                 = "PUBLIT"                                 
+INSTRUMENT_HOST_NAME               = "PUBLISHED LITERATURE"                   
+INSTRUMENT_ID                      = "COMPIL"                                 
+INSTRUMENT_NAME                    = "COMPILATION"                            
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = 1966-01-01                               
+STOP_TIME                          = 2001-12-31                               
+PRODUCT_CREATION_TIME              = 2005-01-11  /* File uploaded to OLAF */  
+REFERENCE_KEY_ID                   = "BRITTETAL2002"                          
+RECORD_FORMAT                      = "(A2, 1X, A74)"                          
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 105                                      
+ ROW_BYTES                         = 80                                       
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 2                                        
+ DESCRIPTION                       = "References to published papers reporting
+        asteroid mass, diameter, and density results which are included in the
+        file 'density.tab'.                                                   
+        "                                                                     
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "REFERENCE"                              
+  DESCRIPTION                      = "The code by which this reference is     
+        cited in the data files 'density.tab' and 'densbest.tab'.  If this    
+        column contains a '-', the line is a continuation of the previous     
+        entry."                                                               
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 2                                        
+  BYTES                            = 2                                        
+  FORMAT                           = "A2"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "CITATION"                               
+  DESCRIPTION                      = "The full citation of the reference.  If 
+        the column 'REFERENCE' contains a '-', this line is a continuation of 
+        the citation of the previous entry."                                  
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 5                                        
+  BYTES                            = 74                                       
+  FORMAT                           = "A74"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           

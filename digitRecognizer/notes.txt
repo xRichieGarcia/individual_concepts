@@ -1,0 +1,15 @@
+Here I'm trying to walkthroug this tutorial to model the classic MNIST digit data
+using scikit-learn
+https://www.kaggle.com/krogermd/digit-recognizer-with-scikit-learn
+
+
+
+There are 3 datasets when using machine learning:
+
+training set - adjusting weights and training model
+
+validation set - insuring increase in accuracy of training set actaully causes an
+                increase in accuracy of data set not seen before (validation set).
+                The validation set tells you when to stop training to prevent overfitting
+               
+test set - actually checks accuracy of newly created model

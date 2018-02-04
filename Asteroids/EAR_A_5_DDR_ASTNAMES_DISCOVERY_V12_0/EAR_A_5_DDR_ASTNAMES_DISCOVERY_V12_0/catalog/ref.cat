@@ -1,0 +1,19 @@
+PDS_VERSION_ID                     = PDS3                                     
+RECORD_TYPE                        = "STREAM"                                 
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "PILCHER1979"                            
+  REFERENCE_DESC                   = "Pilcher, F., Circumstances of minor     
+        planet discovery, in Asteroids, edited by T. Gehrels, pp. 1130-1154,  
+        Univ. of Arizona Press, Tucson, 1979."                                
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "PILCHER1989"                            
+  REFERENCE_DESC                   = "Pilcher, F., The circumstances of minor 
+        planet discovery, in Asteroids II, edited by R.P. Binzel, T. Gehrels, 
+        and M.S. Matthews, pp. 1002-1033, Univ. of Arizona Press, Tucson,     
+        1989."                                                                
+END_OBJECT                         = REFERENCE                                
+                                                                              
+END                                                                           

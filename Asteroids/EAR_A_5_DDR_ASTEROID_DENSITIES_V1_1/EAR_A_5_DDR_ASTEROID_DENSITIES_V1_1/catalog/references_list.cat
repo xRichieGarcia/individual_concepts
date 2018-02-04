@@ -1,0 +1,19 @@
+PDS_VERSION_ID   = PDS3                                                       
+                                                                              
+OBJECT     = REFERENCE                                                        
+  REFERENCE_KEY_ID     = "BRITTETAL2002"                                      
+  REFERENCE_DESC       = "Britt, D.T., D. Yeomans, K. Housen, and G.          
+        Consolmagno, Asteroid density, porosity, and structure, In 'Asteroids 
+        III', Bottke, Cellino, Paolicchi, and Binzel, Eds. University of      
+        Arizona Press and LPI, 2002."                                         
+END_OBJECT = REFERENCE                                                        
+                                                                              
+OBJECT     = REFERENCE                                                        
+  REFERENCE_KEY_ID     = "LUKAC&MILLER2000"                                   
+  REFERENCE_DESC       = "Lukac, M. R., and R. J. Miller. List of Active      
+        Professional Observatories. United States Naval Observatory Circular  
+        No. 178. Washington DC, 2000.                                         
+        "                                                                     
+END_OBJECT = REFERENCE                                                        
+                                                                              
+END                                                                           

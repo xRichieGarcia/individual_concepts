@@ -1,0 +1,8 @@
+%R 2008PDSS..104T
+%H Tholen, D.J.
+%T Asteroid Names and Discovery V12.0
+%D 07/2008
+%J NASA Planetary Data System, EAR-A-5-DDR-ASTNAMES-DISCOVERY-V12.0
+%U http://pdsquery.jpl.nasa.gov/query?Identifier=EAR-A-5-DDR-ASTNAMES-DISCOVERY-V12.0&resclass=data.dataset
+%B This data set includes names, designations, and discovery circumstances for the asteroids numbered as of April 20, 2008.
+

@@ -1,0 +1,8 @@
+%R 2005PDSS...25B
+%A Britt, D.T.;Yeomans, D.;Housen, K.;Consolmagno, G.
+%T Asteroid Densities
+%D 01/2005
+%J NASA Planetary Data System, EAR-A-5-DDR-ASTEROID-DENSITIES-V1.1
+%U http://pdsquery.jpl.nasa.gov/query?Identifier=EAR-A-5-DDR-ASTEROID-DENSITIES-V1.1&resclass=data.dataset
+%B This data set contains a tabulation of asteroid masses, diameters, and bulk densities compiled by D. T. Britt and published in Table 1 of Britt, et al. (2002) [BRITTETAL2002] in the 'Asteroids III' volume.
+
